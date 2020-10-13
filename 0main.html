@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <link rel="icon" type="image" href="ici2.png" />
+  <title>創新國際學院</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #0487d9;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #d8e6f2;
+  }
+  .logo-small {
+    color: #0487d9;
+    font-size: 50px;
+  }
+  .logo {
+    color: #0487d9;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #0487d9;
+  }
+  .carousel-indicators li {
+    border-color: #0487d9;
+  }
+  .carousel-indicators li.active {
+    background-color: #0487d9;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #0487d9;
+    z-index: 9999;
+    border: 0;
+    font-size: 15px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #0487d9 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  .dropdown-menu li{
+    background: #0487d9 !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #0487d9;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button><!--RWD-->
+      <a class="navbar-brand" href="#myPage">
+		<img src="ici.png" style="position:absolute;left:80px;" height=40px alt="NO">
+	  </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">關於我們</a></li>
+		  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">系所成員</a>
+			<ul class="dropdown-menu">
+			  <li><a href="#">系所師資</a></li>
+			  <li><a href="#">行政團隊</a></li>
+			</ul>
+		  </li>			
+        <li><a href="#course">課程介紹</a></li>
+        <li><a href="#news">最新消息</a></li>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">招生專區</a>
+			<ul class="dropdown-menu">
+			  <li><a href="#">時間及申請方式</a></li>
+			  <li><a href="#">學雜費簡表</a></li>
+			</ul>
+		</li>      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="position:relative;">
+	<img src="mainpic2.jpg" style="width:100%" />
+		<img src="blueici.png" style="position:absolute;left:80px;top:150px" height=200px alt="NO">
+		<div style="position:absolute;left:80px;top:200px;color:#0487d9">
+			<div style="font-size:80px;backgroud-color:#010d00;margin-bottom:0;line-height:0.7;text-shadow: 2px 2px 5px #a6b4bf">
+					
+				<p>&#12288&#8195新國際學院</p>
+			</div>
+			<div style="font-size:50px">			
+				<p>&#12288&#8195International Creative Innovative</p>
+			</div>
+		</div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8" style="left:80px">
+      <h2>為什麼選擇創新國際學院</h2><br>
+      <h4>創新國際學院整合校級資源深耕國際學校合作學術交換、研究交換締約學校全球超過600餘所學生於第三、第四年均有到國外交換的機會</h4><br>
+      <p>中英語雙語課程，跨校、跨國、跨域的創新教學模式，突破傳統專業領域限制、成就跨界全才培育
+		 ，豐富海外實習機會，學生可於產業、智庫、非營利組織實習</p>
+
+      <br><button class="btn btn-default btn-lg"style="line-height:0.7">Apply</button><!-- 待定 -->
+    </div>
+    <div class="col-sm-4" style="top:90px;left:80px;height:100%">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div id="course" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4"style="left:80px">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8"style="right:140px">
+      <h2>課程介紹</h2><br><!-- 換表現方法 -->
+      <h4>學院採大一大二不分系，大三、大四則為議題導向跨領域的主題課程，同學將從「全球化與民主治理」、「亞洲社會與永續發展」、「全球
+	  科技與創新管理」三個群修專題擇二修習。本院鼓勵學生大四至少1學期出國交換，或至國內外公部門及政府組織進行實習。ICI課程連結跨域師
+	  資、結合業界國際資源設計具有全球前瞻議題、能激發學生創新思維的活動，密切與北美館合作雙聯展之協商劇場，並邀請國際級學者Bruno Latour
+	  指導策展，更於課程中安排模擬世界衛生大會 (WHO Simulation) 的活動與練習，讓上課學生能將課堂所學與國際時事與理論融合應用。</h4>
+      <button class="btn btn-default btn-lg" style="line-height:0.7;"data-target="#about">more</button><!--not yet-->
+		<br><br>
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-info">
+			  <div class="panel-heading">
+				<h4 class="panel-title">
+				  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">全球化與民主治理 (GGSD)</a>
+				</h4>
+			  </div>
+			  <div id="collapse1" class="panel-collapse collapse in">
+				<div class="panel-body">全球化大量加速人口、資金、貨物與資訊的流動。當世人相互依賴度日增，而全球卻無法共同努力，以致前所未
+				見的挑戰浮現眼前時，往往無法加以掌握管理。因此，我們迫切需要深度理解問題根源以及發展降低風險的能力，並充分探討參與、平等、
+				透明與課責等議題。這些課題是培育下一代國際公共事務人才，推動全球民主治理重要關鍵。</div>
+			  </div>
+			</div>
+			<div class="panel panel-info">
+			  <div class="panel-heading">
+				<h4 class="panel-title">
+				  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">亞洲社會與永續發展 (AS)</a>
+				</h4>
+			  </div>
+			  <div id="collapse2" class="panel-collapse collapse">
+				<div class="panel-body">亞洲擁有數個世界首要經濟體以及新興工業化國家，但也充滿了工業污染、災害風險的挑戰。新興的事務領域出現
+				革新訴求，強調永續發展的視野，以更為廣納而創新的觀點，突破傳統亞洲全球治理的理論、原理、機制與制度。建立由下而上達成共識的模
+				式，方能及時回應危機，這將是亞洲於全球化新世紀的重要挑戰。</div>
+			  </div>
+			</div>
+			<div class="panel panel-info">
+			  <div class="panel-heading">
+				<h4 class="panel-title">
+				  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">全球科技與創新管理 (GTIM)</a>
+				</h4>
+			  </div>
+			  <div id="collapse3" class="panel-collapse collapse">
+				<div class="panel-body">今日的亞洲與全球科技企業生態體系中，相關重大決策皆仰賴資料處理及分析。資料科學串連起不同的知識、描繪
+				出世界的圖像，並且對問題解決與危機預防有顯著貢獻。這是一門持續自我創新的科學，也同時不斷更新其他專業，在公、私及志願部門中廣為應用。</div>
+			  </div>
+			</div>
+		  </div> 
+		</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Portfolio Section) -->
+<div id="news" class="container-fluid text-center bg-grey">
+  <h2>最新消息</h2><br>
+   <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="p2.jpg" alt="Paris" width="400" height="300">
+        <p><strong>捷克議長來台</strong></p>
+        <p>本校榮幸成為...</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="p1.jpg" alt="New York" width="400" height="300">
+        <p><strong>徵人[專任教師]</strong></p>
+        <p>創新國際學院擬徵聘...</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="p3.jpg" alt="San Francisco" width="400px" height="200px">
+        <p><strong>桌遊大賽</strong></p>
+        <p>桌遊大賽將於10/6舉辦...</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>及時快訊</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>賀!本院榮獲109年最佳學院!<br><span>109年5月18日</span></h4>
+      </div>
+      <div class="item">
+        <h4>賀!本院3門課程通過本校高教深耕計畫國際課程!<br><span>109年8月20日</span></h4>
+      </div>
+      <div class="item">
+        <h4>林夏如教授將於10月來訪<br><span>109年9月5日</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>116 台北市文山區指南路二段64號<br> <a>TEL: +886-2-2939-3091 </a></p>
+  <div class="bt_text">總機電話：02-29393091 傳真：02-29379611<br />
+	地址：116011 臺北市文山區指南路二段64號 <br />
+	緊急事件通聯窗口（24小時）：學安中心（校安中心）0919099119（校內分機 66119）<br />
+	駐警隊02-29387129（校內分機66110）</div>
+	</div>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
